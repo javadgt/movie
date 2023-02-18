@@ -1,3 +1,4 @@
+// import Header from '@/components/header'
 import './globals.css'
 
 export default function RootLayout({ children }) {
@@ -8,7 +9,10 @@ export default function RootLayout({ children }) {
         head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body>{children}</body>
+      <body className='min-h-screen'>
+        {/* <Header/> */}
+        {children}
+      </body>
     </html>
   )
 }

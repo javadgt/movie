@@ -15,8 +15,8 @@ function MovieCard({ data }) {
         height={300}
       />
       <div className='p-2 py-6 flex justify-center items-center  flex-grow'>
-        <span className='text-center w-full inline-block'>{data.title}</span>
         <span className='text-center w-full inline-block'>IMDB : {data.imdb_rating}</span>
+        <span className='text-center w-full inline-block'>{data.title}</span>
       </div>
     </div>
   );

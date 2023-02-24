@@ -1,12 +1,13 @@
 "use client"
 
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 function MovieCard({ data }) {
   console.log(data);
   return (
-    <div className='cursor-pointer bg-slate-600 rounded-md overflow-hidden flex flex-col'>
+    <Link href={`movies/${data.id}`} className='cursor-pointer bg-slate-600 rounded-md overflow-hidden flex flex-col'>
       <Image
         className='w-full h-96 '
         src={data.poster}
@@ -18,7 +19,7 @@ function MovieCard({ data }) {
         <span className='text-center w-full inline-block'>IMDB : {data.imdb_rating}</span>
         <span className='text-center w-full inline-block'>{data.title}</span>
       </div>
-    </div>
+    </Link>
   );
 }
 

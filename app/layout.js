@@ -1,4 +1,5 @@
-// import Header from '@/components/header'
+
+import Header from '@/components/header'
 import './globals.css'
 
 export default function RootLayout({ children }) {
@@ -10,7 +11,7 @@ export default function RootLayout({ children }) {
       */}
       <head />
       <body className='min-h-screen'>
-        {/* <Header/> */}
+        <Header/>
         {children}
       </body>
     </html>

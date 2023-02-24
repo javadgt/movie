@@ -11,7 +11,8 @@ body {
 }
 
 body {
-  
+  font-family: "shabnam";
+  direction: rtl;
 }
 
 a {
@@ -23,6 +24,15 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+@font-face {
+  font-family: shabnam;
+  src: url("/font/shabnam/Shabnam-FD.woff");
+  font-display: block
+}
+.custome-grid{
+  grid-template-columns: repeat(auto-fill  , minmax(285px, 1fr));
 }
 
 @tailwind base;
